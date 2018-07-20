@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License").
+  You may not use this file except in compliance with the License.
+  A copy of the License is located at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  or in the "license" file accompanying this file. This file is distributed
+  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+  express or implied. See the License for the specific language governing
+  permissions and limitations under the License.
+-->
+<resources>
+    <string name="app_name">AWSome Notes</string>
+    <string name="title_note_detail">Note Detail</string>
+    <string name="title_hint">Note Title</string>
+    <string name="content_hint">Content</string>
+
+    <!-- These will never be seen by the user, but they stop warnings from popping up -->
+    <!-- They are only for making the designer display actual text during development -->
+    <string name="sample_guid">89dd210b&#8211;4493&#8211;439f&#8211;b895&#8211;cb1dd300e985</string>
+    <string name="sample_title">Sample Title</string>
+</resources>
