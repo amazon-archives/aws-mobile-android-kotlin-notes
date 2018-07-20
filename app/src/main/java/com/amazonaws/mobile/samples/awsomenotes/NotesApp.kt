@@ -22,6 +22,8 @@ import com.amazonaws.mobile.samples.awsomenotes.services.AnalyticsService
 import com.amazonaws.mobile.samples.awsomenotes.services.DataService
 import com.amazonaws.mobile.samples.awsomenotes.services.mock.MockAnalyticsService
 import com.amazonaws.mobile.samples.awsomenotes.services.mock.MockDataService
+import com.amazonaws.mobile.samples.awsomenotes.viewmodels.NoteDetailViewModel
+import com.amazonaws.mobile.samples.awsomenotes.viewmodels.NoteListViewModel
 import org.koin.android.architecture.ext.viewModel
 import org.koin.android.ext.android.startKoin
 import org.koin.dsl.module.Module
@@ -31,6 +33,7 @@ import org.koin.dsl.module.applicationContext
  * This is the entry point into the application.  The main function of this class within this
  * app is to set up dependency injection properly.
  */
+@Suppress("unused")
 class NotesApp : Application() {
     companion object {
         // List of services that this app communicates with.
@@ -46,8 +49,8 @@ class NotesApp : Application() {
 
         // List of view models that are used by activities and fragments
         private val viewModelsModule : Module = applicationContext {
-            viewModel { NoteListViewModel(/* AnalyticsService */ get(), /* NotesRepository */ get()) }
-            viewModel { NoteDetailViewModel(/* AnalyticsService */ get(), /* NotesRepository */ get()) }
+            viewModel { NoteListViewModel(/* NotesRepository */ get()) }
+            viewModel { NoteDetailViewModel(/* NotesRepository */ get()) }
         }
     }
 
